@@ -1,4 +1,4 @@
-import XOR-Encoding
+import XOR_Encoding
 
 #Here we do a quick test
 
