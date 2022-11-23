@@ -1,4 +1,4 @@
-from XOR_Encoder import Encrypter
+from XOR_Encoding import Encrypter
 
 message = "Test"
 key = Encrypter.gen_key()
