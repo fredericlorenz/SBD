@@ -1,13 +1,8 @@
-import XOR_Encoding
+from XOR_Encoder import Encrypter
 
-#Here we do a quick test
+message = "Test"
+key = Encrypter.gen_key()
+enc = Encrypter.str_xor(message, key)
+dec = Encrypter.str_xor(enc, key)
 
-enc = str_xor(message, key)
-print('Encrypted messge is: ' + '\n' + enc + '\n')
-
-
-dec = str_xor(enc, key)
-print('Decrypted messge is: ' + '\n' + dec)
-
-
-assert(dec == "testmessage")
+assert(dec == message)
